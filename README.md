@@ -1,2 +1,2 @@
 # proyecto-final-iOS
-Proyecto final para bootcamp Alkemu-Accenture
+Proyecto final para bootcamp Alkemy-Accenture
