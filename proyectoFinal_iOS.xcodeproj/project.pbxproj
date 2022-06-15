@@ -13,6 +13,9 @@
 		5159891E2859258000FD3FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5159891C2859258000FD3FE7 /* Main.storyboard */; };
 		515989202859258100FD3FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5159891F2859258100FD3FE7 /* Assets.xcassets */; };
 		515989232859258100FD3FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515989212859258100FD3FE7 /* LaunchScreen.storyboard */; };
+		51BA9E33285A26990048AAD0 /* LoginUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BA9E32285A26990048AAD0 /* LoginUser.swift */; };
+		51BA9E35285A26E90048AAD0 /* ConsultasApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BA9E34285A26E90048AAD0 /* ConsultasApi.swift */; };
+		51BA9E37285A345F0048AAD0 /* LoginAuthenticated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BA9E36285A345F0048AAD0 /* LoginAuthenticated.swift */; };
 		5C89675C04D5B9077CAFE4A6 /* Pods_proyectoFinal_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518B53F1D5EA93EFC89E11C3 /* Pods_proyectoFinal_iOS.framework */; };
 		CBDCDA1B28598675008D89FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDCDA1A28598675008D89FB /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +31,9 @@
 		515989222859258100FD3FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		515989242859258100FD3FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		518B53F1D5EA93EFC89E11C3 /* Pods_proyectoFinal_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proyectoFinal_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BA9E32285A26990048AAD0 /* LoginUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUser.swift; sourceTree = "<group>"; };
+		51BA9E34285A26E90048AAD0 /* ConsultasApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultasApi.swift; sourceTree = "<group>"; };
+		51BA9E36285A345F0048AAD0 /* LoginAuthenticated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAuthenticated.swift; sourceTree = "<group>"; };
 		90E906061ED1A9E80169A2C2 /* Pods-proyectoFinal_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proyectoFinal_iOS.release.xcconfig"; path = "Target Support Files/Pods-proyectoFinal_iOS/Pods-proyectoFinal_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		CBDCDA1A28598675008D89FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +79,7 @@
 		515989152859258000FD3FE7 /* proyectoFinal_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				51BA9E31285A26810048AAD0 /* Model */,
 				CBDCDA1828598622008D89FB /* Controller */,
 				515989162859258000FD3FE7 /* AppDelegate.swift */,
 				515989182859258000FD3FE7 /* SceneDelegate.swift */,
@@ -83,6 +90,16 @@
 				515989242859258100FD3FE7 /* Info.plist */,
 			);
 			path = proyectoFinal_iOS;
+			sourceTree = "<group>";
+		};
+		51BA9E31285A26810048AAD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51BA9E32285A26990048AAD0 /* LoginUser.swift */,
+				51BA9E34285A26E90048AAD0 /* ConsultasApi.swift */,
+				51BA9E36285A345F0048AAD0 /* LoginAuthenticated.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		AAC97E17E9E67310DDFC1B30 /* Pods */ = {
@@ -218,9 +235,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBDCDA1B28598675008D89FB /* LoginViewController.swift in Sources */,
+				51BA9E33285A26990048AAD0 /* LoginUser.swift in Sources */,
 				5159891B2859258000FD3FE7 /* ViewController.swift in Sources */,
 				515989172859258000FD3FE7 /* AppDelegate.swift in Sources */,
 				515989192859258000FD3FE7 /* SceneDelegate.swift in Sources */,
+				51BA9E35285A26E90048AAD0 /* ConsultasApi.swift in Sources */,
+				51BA9E37285A345F0048AAD0 /* LoginAuthenticated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,9 +390,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = proyectoFinal_iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Proyecto Final";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -399,9 +421,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = proyectoFinal_iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Proyecto Final";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
